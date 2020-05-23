@@ -16,15 +16,8 @@ public class Main extends GraphicsProgram {
 
 
     public void run() {
-        
-/**        drawing the following two lines to check where the actual boundaries are (debugging only)*/
-        GLine topBorder = new GLine (0,0,getWidth(),0);
-        GLine sideBorder = new GLine(getWidth(),0,getWidth(),getHeight());
-        add(topBorder);
-        add(sideBorder);
-
         setUpMessage();
-        while (true) {
+        while (true) {  //this while loop stops only when the user closes the graphic canvas
             animateMessage();
         }
     }
